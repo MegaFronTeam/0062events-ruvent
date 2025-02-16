@@ -23,12 +23,37 @@
 	</head>
 	<body class="main-page" data-bg="main.jpg">
 		<div class="main-wrapper">
-			<script>addBlock(`header`)</script>
-			<div id="headerWrap"></div>
-			<main>
-				<svg class="icon icon-truck ">
-					<use xlink:href="img/svg/sprite.svg#truck"></use>
-				</svg>
+			<!-- start top-nav-->
+			<div class="top-nav block-with-lazy">
+				<div class="container">
+					<div class="top-nav__row row">
+						<div class="col-4"></div>
+						<div class="col order-lg-0 order-last">
+							<div class="menu-mobile menu-mobile--js">
+								<div class="menu-mobile__inner">
+									<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+									</div>
+									<nav>
+										<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Наши работы</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Калькулятор</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Акции</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Заказать</a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+						<div class="col-auto d-lg-none">
+							<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end top-nav-->
+			<main> 
 				<!-- start headerBlock-->
 				<div class="headerBlock section" id="headerBlock">
 					<div class="container">
@@ -45,170 +70,72 @@
 					</div>
 				</div>
 				<!-- end headerBlock-->
-				<!-- start sCatalog-->
-				<div class="sCatalog section">
+				<!-- start sLogos-->
+				<section class="sLogos section" id="sLogos">
 					<div class="container">
 						<div class="section-title text-center">
-							<h2>sCatalog</h2>
-							<p>Выкупаем проблемные автомобили в день обращения</p>
+							<h2>sLogos</h2>
 						</div>
-						<div class="sCatalog__row row">
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-1.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-2.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-3.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-4.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-5.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-6.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-7.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
-							<div class="sCatalog__col col-3">
-								<article class="product-item">
-									<a class="product-item__img-wrap" href="#">
-										<div class="img-wrap-center"> <img src="img/prod-8.jpg" alt="" loading="lazy"/>
-										</div>
-									</a>
-									<div class="product-item__caption">
-										<div class="product-item__title">
-										</div>
-										<div class="product-item__text">
-										</div>
-										<div class="product-item__price">
-										</div>
-										<a class="product-item__btn" href="#">
-										</a>
-									</div>
-								</article>
-								<!-- /.product-item-->
-							</div>
+						<div class="sLogos__row row">
 						</div>
 					</div>
-				</div>
-				<!-- end sCatalog-->
+				</section>
+				<!-- end sLogos-->
+				<!-- start sWhy-->
+				<section class="sWhy section" id="sWhy">
+					<div class="container">
+						<div class="section-title text-center">
+							<h2>sWhy</h2>
+						</div>
+						<div class="sWhy__row row">
+						</div>
+					</div>
+				</section>
+				<!-- end sWhy-->
+				<!-- start sSetOfServices-->
+				<section class="sSetOfServices section" id="sSetOfServices">
+					<div class="container">
+						<div class="section-title text-center">
+							<h2>sSetOfServices</h2>
+						</div>
+						<div class="sSetOfServices__row row">
+						</div>
+					</div>
+				</section>
+				<!-- end sSetOfServices-->
+				<!-- start sOtherServices-->
+				<section class="sOtherServices section" id="sOtherServices">
+					<div class="container">
+						<div class="section-title text-center">
+							<h2>sOtherServices</h2>
+						</div>
+						<div class="sOtherServices__row row">
+						</div>
+					</div>
+				</section>
+				<!-- end sOtherServices-->
+				<!-- start sPrices-->
+				<section class="sPrices section" id="sPrices">
+					<div class="container">
+						<div class="section-title text-center">
+							<h2>sPrices</h2>
+						</div>
+						<div class="sPrices__row row">
+						</div>
+					</div>
+				</section>
+				<!-- end sPrices-->
+				<!-- start sPhotos-->
+				<section class="sPhotos section" id="sPhotos">
+					<div class="container">
+						<div class="section-title text-center">
+							<h2>sPhotos</h2>
+						</div>
+						<div class="sPhotos__row row">
+						</div>
+					</div>
+				</section>
+				<!-- end sPhotos-->
 				<!-- start sForm-->
 				<section class="sForm section" id="sForm">
 					<div class="container">
@@ -242,17 +169,6 @@
 					</div>
 				</section>
 				<!-- end sForm-->
-				<!-- start sContact-->
-				<section class="sContact section" id="sContact">
-					<div class="container">
-						<div class="section-title text-center">
-							<h2>sContact</h2>
-						</div>
-						<div class="sContact__row row">
-						</div>
-					</div>
-				</section>
-				<!-- end sContact-->
 			</main>
 			<script>addBlock(`footer`)</script>
 			<div id="footerWrap"></div>

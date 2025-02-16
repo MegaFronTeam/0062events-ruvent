@@ -1,13 +1,14 @@
 extends ../layout/main.pug
 
+include ../blocks/top-nav/_top-nav.pug
 include ../blocks/headerBlock/_headerBlock.pug
-include ../blocks/sForm/_sForm.pug
-include ../blocks/sContent/_sContent.pug
- 
-include ../blocks/sContact/_sContact.pug
-include ../blocks/sForm/_sForm.pug
-include ../blocks/sForm/_sForm.pug
-include ../blocks/sCatalog/_sCatalog.pug
+include ../blocks/sLogos/_sLogos.pug
+include ../blocks/sWhy/_sWhy.pug
+include ../blocks/sSetOfServices/_sSetOfServices.pug
+include ../blocks/sOtherServices/_sOtherServices.pug
+include ../blocks/sPrices/_sPrices.pug
+include ../blocks/sPhotos/_sPhotos.pug 
+include ../blocks/sForm/_sForm.pug 
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -20,13 +21,16 @@ block pagecontent
 	//- +mob-mnu()
 	
 	
-	+parts('header')
-	main
-		+icon("truck")
-		//- iframe( src="https://kinescope.io/e2XNJwJpavG2tdvfcveMaD", width="900", height="500", frameborder="0", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+	+top-nav
+	main 
 		+headerBlock 
-		+sCatalog
-		+sForm()
-		+sContact()
+		+sLogos
+		+sWhy
+		+sSetOfServices
+		+sOtherServices
+		+sPrices
+		+sPhotos
+
+		+sForm
 		
 	+parts('footer')
