@@ -59,6 +59,28 @@ function eventHandler() {
 		slideToClickedSlide: true,
 		freeModeMomentum: true,
 	});
+
+	new Swiper(".slider-auto-js", {
+		slidesPerView: "auto",
+	});
+
+	const swiperEl = document.querySelectorAll(".sPhotos__slider--js");
+
+	swiperEl.forEach(el => {
+		const autoplaySpeed = el.dataset.autoplay || 2000;
+		const isReverse = el.dataset.reverse === "true"; // Читаем data-reverse
+
+		new Swiper(el, {
+			loop: true,
+			slidesPerView: "auto",
+			speed: 16000,
+			autoplay: {
+				delay: parseInt(autoplaySpeed),
+				disableOnInteraction: false,
+				reverseDirection: isReverse, // Включает реверс
+			},
+		});
+	});
 }
 if (document.readyState !== "loading") {
 	eventHandler();

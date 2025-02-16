@@ -12,7 +12,7 @@
 
 	opacity: 0;
 	opacity: 0.7;
-	content: var(--screen);
+	// content: var(--screen);
 }
 
 body,
@@ -120,6 +120,41 @@ main {
 
 .section-title {
 	margin-bottom: var(--sTPB);
+	h2 {
+		display: inline-block;
+		span {
+			/* Почему нам доверяют */
+
+			width: 699.02px;
+			height: 52px;
+
+			/* heading/H2 */
+			font-family: "Onest";
+			font-style: normal;
+			// font-weight: 600;
+			font-size: 48px;
+			line-height: 52px;
+			/* identical to box height, or 108% */
+			align-items: center;
+
+			color: #292b33;
+
+			/* Inside auto layout */
+			flex: none;
+			order: 0;
+			flex-grow: 0;
+
+			background: linear-gradient(110.29deg, #3d58b0 16.87%, #2dcb70 91.34%);
+
+			leading-trim: both;
+			text-edge: cap;
+			-webkit-background-clip: text;
+			text-align: center;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			text-fill-color: transparent;
+		}
+	}
 }
 
 .mono {

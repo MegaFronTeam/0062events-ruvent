@@ -2,8 +2,20 @@ mixin sOtherServices(data)
 	// start sOtherServices
 	+b.SECTION.sOtherServices.section#sOtherServices&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sOtherServices
+			+b.section-title
+				h3 Дополнительные сервисы и услуги
 				
-			+e.row.row
+			+e.slider.slider-auto-js.swiper
+				.swiper-wrapper
+					mixin item(i,t,p)
+						+e.slide.swiper-slide
+							.icon-wrap
+								+img(`img/svg/sOtherServices-i-${i}.svg`)
+							h4= t
+							p= p
+					+item(1,'Контроль доступа и безопасность','Контроль доступа с использованием RFID и QR/штрихкодов. Решения для предотвращения несанкционированного доступа и сбора отметок посещения мероприятия/стендов.')
+					+item(2,'Электронные визитки Quick Contact','Электронные визитки в QR-коде или RFID-метке для быстрого обмена контактами на мероприятии')
+					+item(3,'Онлайн-сервисы','Собственные формы онлайн-регистрации и система управления заявками – сбор данных на посещения мероприятия.')
+					+item(4,'Рассылки и уведомления','Отправки рассылок, пригласительных с QR-кодами, сертификатов и благодарственных писем. Автоматическая отправка писем с информацией о регистрации, статусе заявки и приглашениями.')
+
 	// end sOtherServices

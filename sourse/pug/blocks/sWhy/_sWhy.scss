@@ -3,26 +3,58 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
-	
-	&__row{
+
+	&__row {
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
 	}
-	.section-title{
-		
+	.section-title {
 	}
-	&__col{
-		
+	&__col {
 	}
-	&__item{
-		
+	&__item {
 	}
 
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
-	@include media-breakpoint-between(md, xl) {}
-	@include media-breakpoint-only(xl) {}
-	@include media-breakpoint-down(xl) {}
+	&__slider {
+		overflow: visible;
+	}
+	.swiper-wrapper {
+		@include media-breakpoint-up(xl) {
+			transform: none !important;
+		}
+	}
+
+	&__slide {
+		max-width: rem(230);
+		margin-right: 30px;
+
+		&::before {
+			content: url(../img/svg/check.svg);
+			display: block;
+			margin-bottom: 1rem;
+		}
+		strong {
+			display: block;
+			margin-bottom: 1rem;
+		}
+	}
+
+	.h3 {
+		font-weight: normal;
+		margin-bottom: rem(58);
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
 } // end.sWhy

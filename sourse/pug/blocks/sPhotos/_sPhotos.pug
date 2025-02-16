@@ -2,8 +2,23 @@ mixin sPhotos(data)
 	// start sPhotos
 	+b.SECTION.sPhotos.section#sPhotos&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sPhotos
+			+b.section-title
+				h2 Фото #[span с наших проектов]
 				
-			+e.row.row
+		+e.slider--js.swiper(data-autoplay="100")
+			.swiper-wrapper
+				- for (var x = 1; x < 7; x++)
+					+e.slide.swiper-slide
+						+img(`img/gal-${x}.png`)
+				- for (var x = 1; x < 7; x++)
+					+e.slide.swiper-slide
+						+img(`img/gal-${x}.png`)
+		+e.slider--js.swiper(data-autoplay="100" data-reverse="true")
+			.swiper-wrapper
+				- for (var x = 1; x < 7; x++)
+					+e.slide.swiper-slide
+						+img(`img/gal-${x}.png`) 
+				- for (var x = 1; x < 7; x++)
+					+e.slide.swiper-slide
+						+img(`img/gal-${x}.png`) 
 	// end sPhotos
