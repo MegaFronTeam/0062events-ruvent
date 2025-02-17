@@ -4,21 +4,23 @@ mixin sPhotos(data)
 		.container
 			+b.section-title
 				h2 Фото #[span с наших проектов]
-				
+		
+		mixin item(x,type='jpg')
+			+e.slide.swiper-slide(data-fancybox="modal-gal-photos" data-src=`img/photos/photo-${x}.${type}`)
+				+img(`img/photos/photo-${x}.${type}`) 
 		+e.slider--js.swiper(data-autoplay="100")
 			.swiper-wrapper
-				- for (var x = 1; x < 7; x++)
-					+e.slide.swiper-slide
-						+img(`img/gal-${x}.png`)
-				- for (var x = 1; x < 7; x++)
-					+e.slide.swiper-slide
-						+img(`img/gal-${x}.png`)
+				- for (var x = 1; x < 41; x++)
+					+item(x)
 		+e.slider--js.swiper(data-autoplay="100" data-reverse="true")
 			.swiper-wrapper
-				- for (var x = 1; x < 7; x++)
-					+e.slide.swiper-slide
-						+img(`img/gal-${x}.png`) 
-				- for (var x = 1; x < 7; x++)
-					+e.slide.swiper-slide
-						+img(`img/gal-${x}.png`) 
+				- for (var x = 42; x < 83; x++)
+					- if(x == '78')
+						+item(x,'webp')
+						 
+					- else if(x == '82' || x == '65')
+						+item(x,'png')
+					- else
+						+item(x)
+
 	// end sPhotos

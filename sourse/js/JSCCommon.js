@@ -18,6 +18,11 @@ class JSCCommon {
 		Fancybox.defaults.autoFocus = false;
 		Fancybox.defaults.placeFocusBack = false;
 
+		Fancybox.bind("[data-fancybox]", {
+			autoFocus: false,
+			placeFocusBack: false,
+		});
+
 		Fancybox.bind(link, {
 			arrows: false,
 			// // infobar: false,

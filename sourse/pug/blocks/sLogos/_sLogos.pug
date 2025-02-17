@@ -7,7 +7,14 @@ mixin sLogos(data)
 				mixin item(i)
 					+e.slide.swiper-slide
 						+e.img-wrap
-							+img(`img/logo-${i}.png`)
-				- for (var x = 1; x < 37; x++)
-					+item(x) 
+							+img(`img/logo-${i}`)
+				- for (var x = 1; x < 9; x++)
+					+item(x+'.png') 
+				+item('9.svg')
+				- for (var x = 10; x < 30; x++)
+					+item(x+'.png') 
+				+item('30.jpg')
+				+item('31.svg')
+				- for (var x = 32; x < 37; x++)
+					+item(x+'.png') 
 	// end sLogos

@@ -1,12 +1,12 @@
 {
 	"nav": [
-		{"name": "О нас", "url": "#"},
-		{"name": "Услуги", "url": "#"},
-		{"name": "Стоимость", "url": "#"},
-		{"name": "Медиа", "url": "#"},
+		{"name": "О нас", "url": "#sWhy"},
+		{"name": "Услуги", "url": "#sSetOfServices"},
+		{"name": "Стоимость", "url": "#sPrices"},
+		{"name": "Медиа", "url": "#sPhotos"},
 		{
 			"name": "Контакты",
-			"url": "#"
+			"url": "#sForm"
 		}
 	],
 	"social": ["fb", "instagram", "telegram"],
