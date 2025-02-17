@@ -3,7 +3,7 @@
 		@include media-breakpoint-up(lg) {
 			display: flex;
 			text-align: center;
-			@include roww(20px);
+			@include roww(28px);
 			flex-wrap: wrap;
 		}
 	}
@@ -21,6 +21,8 @@
 	}
 	a {
 		display: block;
+		color: $body-color;
+		font-size: 14px;
 		padding: rem(20) calc(var(--bs-gutter-x) / 2);
 	}
 }
@@ -119,7 +121,7 @@
 			}
 		}
 		&__inner {
-			padding: calc(env(safe-area-inset-top, 0px) + #{rem(20)}) 0
+			padding: calc(env(safe-area-inset-top, 0px) + #{rem(20)}) 20px
 				calc(env(safe-area-inset-bottom, 0px) + #{rem(20)});
 			overflow-x: hidden;
 			overflow-y: auto;

@@ -6,17 +6,18 @@
 	--sPB: #{rem(60)};
 	--sTPB: #{rem(40)};
 
-	--fancybox-content-color: var(--bs-body-color);
-	--swiperArrowSize: #{rem(68)};
-	--swiperArrowPosition: calc(-1 * var(--swiperArrowSize) / 2);
-	--swiperBorderColorDef: var(--bs-primary);
-	--swiperColorDef: var(--bs-primary);
-	--swiperBgDef: #ffffff;
+	--fancybox-content-color: #fff;
+	--swiperArrowSize: #{rem(74)};
+	--swiperArrowPosition: -10px;
+	--swiperColorDef: #ffffff;
+	--swiperBgDef: var(--bs-primary);
 
-	--swiperBorderColorDefHover: var(--bs-primary);
 	--swiperColorDefHover: var(--bs-primary);
 	--swiperBgDefHover: #ffffff;
 
+	@include media-breakpoint-up(lg) {
+		--swiperArrowPosition: calc(-1 * var(--swiperArrowSize) / 2);
+	}
 	@include media-breakpoint-up(lg) {
 		--sTPB: #{rem(60)};
 		--sPT: #{rem(80)};

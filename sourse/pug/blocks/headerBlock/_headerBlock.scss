@@ -4,6 +4,7 @@
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
 
+	text-align: left;
 	&__row {
 		// --bs-gutter-x: #{rem()};
 		--bs-gutter-y: var(--bs-gutter-x);
@@ -16,6 +17,77 @@
 	}
 	&__slide {
 		height: auto;
+	}
+
+	.btn {
+		margin-top: rem(40);
+	}
+	&__row {
+		justify-content: space-between;
+		font-weight: 600;
+		.strong {
+			@include rfs(40px);
+		}
+	}
+	&__slider-wrap {
+		position: relative;
+		z-index: 2;
+		max-width: rem(550);
+		@include media-breakpoint-up(lg) {
+			margin-right: 0;
+		}
+		margin-right: auto;
+		margin-left: auto;
+		&::after,
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: -2;
+			width: 352.47px;
+			filter: blur(154.35px);
+			height: 352.47px;
+		}
+		&::after {
+			background: $success;
+			left: 0;
+			bottom: 0;
+		}
+		&::before {
+			background: $primary;
+			right: 0;
+			top: 0;
+		}
+	}
+	&__slider {
+		aspect-ratio: 550 / 530;
+
+		// margin-left: auto;
+
+		mask-image: url(../img/svg/mask.svg);
+		mask-size: contain;
+		mask-repeat: no-repeat;
+		mask-position: center;
+	}
+	&__slide {
+		img {
+			width: 100%;
+			object-fit: cover;
+			height: 100%;
+		}
+	}
+
+	.swiper-button-hand {
+		// position: relative;
+		z-index: 4;
+		mask-image: url(../img/svg/mask.svg);
+		mask-size: contain;
+		mask-repeat: no-repeat;
+		mask-position: center;
+
+		// aspect-ratio: 550 / 530;
+	}
+	.swiper-button-hand-prev {
+		// left: 8%;
 	}
 
 	@include media-breakpoint-up(xl) {

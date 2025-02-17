@@ -2,8 +2,29 @@ mixin headerBlock()
 	// start headerBlock
 	+b.headerBlock.section#headerBlock&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd 
-			.row
+			.row.gy-4
+				.col-lg-6.order-lg-last
+					+e.slider-wrap
+						+e.slider--js.swiper
+							.swiper-wrapper
+								- for (var x = 0; x < 3; x++)
+									+e.slide.swiper-slide
+										+img("img/head-img.jpg")
+						+arrow
+				.col-lg-6
+					+b.section-title
+						h1 #[span Аккредитация посетителей.] Комплексное решение для мероприятий
+						p Печать бейджей, контроль доступа, электронные визитки, формы регистраций, рассылки билетов с QR-кодом
+					+e.row.row.gy-2 
+						.col-sm-4.col-6 
+							.strong 10+
+							p лет на рынке
+						.col-sm-4.col-6 
+							.strong 2000+ 
+							p мероприятий
+						.col-sm-4
+							.strong 4.5M+ 
+							p аккредитованных посетителей
+					a.btn.btn-success(href="#") Запросить расчет
 						
 	// end headerBlock

@@ -120,6 +120,7 @@ main {
 
 .section-title {
 	margin-bottom: var(--sTPB);
+	h1,
 	h2 {
 		display: inline-block;
 		span {
@@ -129,7 +130,6 @@ main {
 			leading-trim: both;
 			text-edge: cap;
 			-webkit-background-clip: text;
-			text-align: center;
 			-webkit-text-fill-color: transparent;
 			background-clip: text;
 			text-fill-color: transparent;
@@ -272,7 +272,7 @@ ul {
 .swiper-button-hand {
 	width: var(--swiperArrowSize);
 	height: var(--swiperArrowSize);
-	border-radius: 50%;
+	border-radius: 0;
 	background-color: var(--swiperBgDef);
 	border: 2px solid var(--swiperBorderColorDef);
 	color: var(--swiperColorDef);
@@ -285,6 +285,9 @@ ul {
 	box-shadow: 0 15px 60px rgba(0, 0, 0, 0.1);
 	@include mt;
 	user-select: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	&:hover {
 		background-color: var(--swiperBgDefHover);
@@ -293,7 +296,10 @@ ul {
 	}
 
 	.icon {
-		font-size: rem(12);
+		font-size: rem(18);
+		fill: none;
+		stroke: currentColor;
+		stroke-width: 4;
 	}
 
 	&::after {

@@ -26,26 +26,63 @@
 	<body class="main-page" data-bg="main.jpg">
 		<div class="main-wrapper">
 			<!-- start top-nav-->
-			<div class="top-nav block-with-lazy">
+			<div class="top-nav section block-with-lazy">
 				<div class="container">
 					<div class="top-nav__row row">
-						<div class="col-4"></div>
-						<div class="col order-lg-0 order-last">
+						<div class="col-lg-auto col">
+							<a class="top-nav__logo" href="/"><img src="img/svg/logo.svg" alt="" loading="lazy"/>
+							</a>
+						</div>
+						<div class="col-lg order-lg-0 order-last">
 							<div class="menu-mobile menu-mobile--js">
 								<div class="menu-mobile__inner">
+									<div class="d-lg-none">
+										<a class="top-nav__logo" href="/"><img src="img/svg/logo.svg" alt="" loading="lazy"/>
+										</a>
+									</div>
 									<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
 									</div>
 									<nav>
 										<ul class="menu" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Наши работы</a></li>
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Цены</a></li>
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Калькулятор</a></li>
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Акции</a></li>
-											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Заказать</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">О нас</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Услуги</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Стоимость</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Медиа</a></li>
+											<li class="menu-item" itemprop="item"><a href="#" itemprop="url">Контакты</a></li>
 										</ul>
 									</nav>
+									<div class="d-lg-none">
+										<div class="my-4">
+											<a class="top-nav__link text-body" href="mailto:hi@ruvents.com">
+												<svg class="icon icon-email ">
+													<use xlink:href="img/svg/sprite.svg#email"></use>
+												</svg>hi@ruvents.com
+											</a>
+										</div>
+										<div class="mb-4">
+											<a class="top-nav__link text-primary" href="mailto:+7(495)109-02-00p2"> 
+												<svg class="icon icon-tel ">
+													<use xlink:href="img/svg/sprite.svg#tel"></use>
+												</svg>+7 (495) 109-02-00 доб. 2 
+											</a>
+										</div>
+									</div>
 								</div>
 							</div>
+						</div>
+						<div class="col-auto">
+							<a class="top-nav__link text-body" href="mailto:hi@ruvents.com">
+								<svg class="icon icon-email ">
+									<use xlink:href="img/svg/sprite.svg#email"></use>
+								</svg><span class="d-none d-xl-inline">hi@ruvents.com</span>
+							</a>
+						</div>
+						<div class="col-auto">
+							<a class="top-nav__link text-primary" href="mailto:+7(495)109-02-00p2"> 
+								<svg class="icon icon-tel ">
+									<use xlink:href="img/svg/sprite.svg#tel"></use>
+								</svg><span class="d-none d-xl-inline">+7 (495) 109-02-00 доб. 2 </span>
+							</a>
 						</div>
 						<div class="col-auto d-lg-none">
 							<div class="toggle-menu-mobile toggle-menu-mobile--js d-lg-none"><span></span>
@@ -59,67 +96,107 @@
 				<!-- start headerBlock-->
 				<div class="headerBlock section" id="headerBlock">
 					<div class="container">
-						<div class="section-title text-center">
-							<h2>headerBlock ds dfsdfdsfsd </h2>
+						<div class="row gy-4">
+							<div class="col-lg-6 order-lg-last">
+								<div class="headerBlock__slider-wrap">
+									<div class="headerBlock__slider headerBlock__slider--js swiper">
+										<div class="swiper-wrapper">
+											<div class="headerBlock__slide swiper-slide"><img src="img/head-img.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="headerBlock__slide swiper-slide"><img src="img/head-img.jpg" alt="" loading="lazy"/>
+											</div>
+											<div class="headerBlock__slide swiper-slide"><img src="img/head-img.jpg" alt="" loading="lazy"/>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
+										<svg class="icon icon-arrow-left ">
+											<use xlink:href="img/svg/sprite.svg#arrow-left"></use>
+										</svg>
+									</div>
+									<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
+										<svg class="icon icon-arrow-right ">
+											<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="section-title">
+									<h1><span>Аккредитация посетителей.</span> Комплексное решение для мероприятий</h1>
+									<p>Печать бейджей, контроль доступа, электронные визитки, формы регистраций, рассылки билетов с QR-кодом</p>
+								</div>
+								<div class="headerBlock__row row gy-2"> 
+									<div class="col-sm-4 col-6"> 
+										<div class="strong">10+</div>
+										<p>лет на рынке</p>
+									</div>
+									<div class="col-sm-4 col-6"> 
+										<div class="strong">2000+ </div>
+										<p>мероприятий</p>
+									</div>
+									<div class="col-sm-4">
+										<div class="strong">4.5M+ </div>
+										<p>аккредитованных посетителей</p>
+									</div>
+								</div><a class="btn btn-success" href="#">Запросить расчет</a>
+							</div>
 						</div>
-						<div class="row"></div>
 					</div>
 				</div>
 				<!-- end headerBlock-->
 				<!-- start sLogos-->
-				<div class="sLogos" id="sLogos">
-					<div class="container">
-						<div class="sLogos__slider sLogos__slider--js swiper">
-							<div class="swiper-wrapper">
-									<div class="sLogos__slide swiper-slide">
-										<div class="sLogos__img-wrap"><img src="img/logo-1.png" alt="" loading="lazy"/>
-										</div>
+				<div class="sLogos" id="sLogos"> 
+					<div class="sLogos__slider sLogos__slider--js swiper">
+						<div class="swiper-wrapper">
+								<div class="sLogos__slide swiper-slide">
+									<div class="sLogos__img-wrap"><img src="img/logo-1.png" alt="" loading="lazy"/>
 									</div>
-									<div class="sLogos__slide swiper-slide">
-										<div class="sLogos__img-wrap"><img src="img/logo-2.png" alt="" loading="lazy"/>
-										</div>
+								</div>
+								<div class="sLogos__slide swiper-slide">
+									<div class="sLogos__img-wrap"><img src="img/logo-2.png" alt="" loading="lazy"/>
 									</div>
-									<div class="sLogos__slide swiper-slide">
-										<div class="sLogos__img-wrap"><img src="img/logo-3.png" alt="" loading="lazy"/>
-										</div>
+								</div>
+								<div class="sLogos__slide swiper-slide">
+									<div class="sLogos__img-wrap"><img src="img/logo-3.png" alt="" loading="lazy"/>
 									</div>
-									<div class="sLogos__slide swiper-slide">
-										<div class="sLogos__img-wrap"><img src="img/logo-4.png" alt="" loading="lazy"/>
-										</div>
+								</div>
+								<div class="sLogos__slide swiper-slide">
+									<div class="sLogos__img-wrap"><img src="img/logo-4.png" alt="" loading="lazy"/>
 									</div>
-									<div class="sLogos__slide swiper-slide">
-										<div class="sLogos__img-wrap"><img src="img/logo-5.png" alt="" loading="lazy"/>
-										</div>
+								</div>
+								<div class="sLogos__slide swiper-slide">
+									<div class="sLogos__img-wrap"><img src="img/logo-5.png" alt="" loading="lazy"/>
 									</div>
-									<div class="sLogos__slide swiper-slide">
-										<div class="sLogos__img-wrap"><img src="img/logo-6.png" alt="" loading="lazy"/>
-										</div>
+								</div>
+								<div class="sLogos__slide swiper-slide">
+									<div class="sLogos__img-wrap"><img src="img/logo-6.png" alt="" loading="lazy"/>
 									</div>
-									<div class="sLogos__slide swiper-slide">
-										<div class="sLogos__img-wrap"><img src="img/logo-1.png" alt="" loading="lazy"/>
-										</div>
+								</div>
+								<div class="sLogos__slide swiper-slide">
+									<div class="sLogos__img-wrap"><img src="img/logo-1.png" alt="" loading="lazy"/>
 									</div>
-									<div class="sLogos__slide swiper-slide">
-										<div class="sLogos__img-wrap"><img src="img/logo-2.png" alt="" loading="lazy"/>
-										</div>
+								</div>
+								<div class="sLogos__slide swiper-slide">
+									<div class="sLogos__img-wrap"><img src="img/logo-2.png" alt="" loading="lazy"/>
 									</div>
-									<div class="sLogos__slide swiper-slide">
-										<div class="sLogos__img-wrap"><img src="img/logo-3.png" alt="" loading="lazy"/>
-										</div>
+								</div>
+								<div class="sLogos__slide swiper-slide">
+									<div class="sLogos__img-wrap"><img src="img/logo-3.png" alt="" loading="lazy"/>
 									</div>
-									<div class="sLogos__slide swiper-slide">
-										<div class="sLogos__img-wrap"><img src="img/logo-4.png" alt="" loading="lazy"/>
-										</div>
+								</div>
+								<div class="sLogos__slide swiper-slide">
+									<div class="sLogos__img-wrap"><img src="img/logo-4.png" alt="" loading="lazy"/>
 									</div>
-									<div class="sLogos__slide swiper-slide">
-										<div class="sLogos__img-wrap"><img src="img/logo-5.png" alt="" loading="lazy"/>
-										</div>
+								</div>
+								<div class="sLogos__slide swiper-slide">
+									<div class="sLogos__img-wrap"><img src="img/logo-5.png" alt="" loading="lazy"/>
 									</div>
-									<div class="sLogos__slide swiper-slide">
-										<div class="sLogos__img-wrap"><img src="img/logo-6.png" alt="" loading="lazy"/>
-										</div>
+								</div>
+								<div class="sLogos__slide swiper-slide">
+									<div class="sLogos__img-wrap"><img src="img/logo-6.png" alt="" loading="lazy"/>
 									</div>
-							</div>
+								</div>
 						</div>
 					</div>
 				</div>

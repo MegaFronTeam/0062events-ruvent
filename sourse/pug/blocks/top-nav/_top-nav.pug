@@ -19,16 +19,37 @@ mixin mob-mnu()
 	//  мобильное меню
 mixin top-nav() 
 	// start top-nav
-	+b.top-nav.block-with-lazy
+	+b.top-nav.section.block-with-lazy
 		.container
 			+e.row.row
-				.col-4
-				.col.order-lg-0.order-last
+				.col-lg-auto.col
+					+e.logo(href="/")
+						+img('img/svg/logo.svg')
+				.col-lg.order-lg-0.order-last
 					.menu-mobile.menu-mobile--js
 						.menu-mobile__inner
+							.d-lg-none
+								+e.logo(href="/")
+									+img('img/svg/logo.svg')
 							+menu-toggle()
 							+mnu()
-					
+							.d-lg-none
+								.my-4
+									+e.link(href="mailto:hi@ruvents.com").text-body
+										+icon("email")
+										| hi@ruvents.com
+								.mb-4
+									+e.link(href="mailto:+7(495)109-02-00p2").text-primary 
+										+icon("tel")
+										| +7 (495) 109-02-00 доб. 2 
+				.col-auto
+					+e.link(href="mailto:hi@ruvents.com").text-body
+						+icon("email")
+						span.d-none.d-xl-inline hi@ruvents.com
+				.col-auto
+					+e.link(href="mailto:+7(495)109-02-00p2").text-primary 
+						+icon("tel")
+						span.d-none.d-xl-inline +7 (495) 109-02-00 доб. 2 
 				.col-auto.d-lg-none
 					+menu-toggle()
 	// end top-nav

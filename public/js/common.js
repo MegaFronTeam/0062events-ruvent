@@ -43,6 +43,16 @@ function eventHandler() {
 		},
 	};
 
+	new Swiper(".headerBlock__slider--js", {
+		slidesPerView: 1,
+		loop: true,
+		watchOverflow: true,
+		navigation: {
+			nextEl: ".headerBlock .swiper-button-next",
+			prevEl: ".headerBlock .swiper-button-prev",
+		},
+	});
+
 	new Swiper(".breadcrumb-slider--js", {
 		slidesPerView: "auto",
 		freeMode: true,

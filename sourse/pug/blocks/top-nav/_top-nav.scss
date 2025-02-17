@@ -1,37 +1,50 @@
 .top-nav {
-	// --sPT: #{rem()};
-	// --sPB: #{rem()};
+	--sPT: #{rem(19)};
+	--sPB: #{rem(19)};
+	font-size: 14px;
 	// --sTPB: #{rem()};
-	&__row{
-		// --bs-gutter-x: #{rem()};
-		// @include media-breakpoint-up(md) {
-			--bs-gutter-y: var(--bs-gutter-x);
-		// }
+	&__row {
+		--bs-gutter-x: #{rem(24)};
+		@include media-breakpoint-up(md) {
+			// --bs-gutter-y: var(--bs-gutter-x);
+		}
+		align-items: center;
+	}
 
+	&__logo {
+		margin-right: rem(36);
 	}
-	.section-title{
-		
+	.section-title {
 	}
-	&__col{
-
+	&__col {
 	}
-	&__item{
-
+	&__item {
 	}
-	&__slide{
+	&__slide {
 		height: auto;
 	}
 
+	&__link {
+		display: inline-flex;
+		align-items: center;
+		gap: rem(10);
+		.icon {
+			color: $primary;
+			// font-size: rem(18);
+		}
+	}
+	@include media-breakpoint-up(sm) {
+	}
 
-	@include media-breakpoint-up(sm) {}
-	
-	@include media-breakpoint-up(xs) {}
-	// 
-	@include media-breakpoint-between(md, xl) {}
-	// 
-	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-up(xs) {
+	}
+	//
+	@include media-breakpoint-between(md, xl) {
+	}
+	//
+	@include media-breakpoint-only(xs) {
+	}
 
-	@include media-breakpoint-down(xs) {}
+	@include media-breakpoint-down(xs) {
+	}
 }
-
-
