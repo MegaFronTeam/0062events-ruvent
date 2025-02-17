@@ -1,16 +1,42 @@
+
+
 mixin sForm()
 	// start sForm
 	+b.SECTION.sForm.section#sForm&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sForm
-				
+ 
+			<iframe src="https://yandex.ru/sprav/widget/rating-badge/30586917124" width="150" height="50" frameborder="0"></iframe>
 			+e.row.row
-			+form-wrap
-				+input("",'')
-				+input("",'')
-				+input("",'')
-				+input("",'')
-				+e.btn.btn.btn-primary(type="submit") Submit
-				+policy
+				.col-lg-5
+					+b.section-title
+						h3 Оставьте заявку, и&nbsp;мы&nbsp;с&nbsp;вами свяжемся
+
+						
+					+form-wrap
+						include form.html
+						
+				+e.contact#contact.col-lg-7.order-lg-first
+					
+					+b.section-title
+						h3 Контакты
+					div
+						+e.link(href="mailto:hi@ruvents.com")  hi@ruvents.com
+						br
+						+e.link(href="mailto:+7(495)109-02-00p2") +7 (495) 109-02-00 
+							small доб. 2 
+					+e.footer
+						p ООО «РУВЕНТС» 
+							br
+							| ОГРН 1147746160320
+							br
+							| ИНН 7703806326
+
+						p 127055 г. Москва, ул. Образцова д.7 подъезд 3, 
+						.row
+							.col-auto
+								a(href="#") Политика конфиденциальности
+							.col-auto
+								a(href="#")  Пользовательское соглашение 
+			
+	
 	// end sForm

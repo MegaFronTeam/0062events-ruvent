@@ -101,6 +101,28 @@ function eventHandler() {
 			},
 		});
 	});
+
+	let isOpen = false;
+
+	$(document).on("click", ".more-js", function (e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		let defaultHeight = "10em"; // Фиксированная высота
+		let autoHeight = $(".seo").prop("scrollHeight") + "px";
+		$(".seo").toggleClass("opened");
+
+		if (isOpen) {
+			$(".seo").animate({height: defaultHeight}, 300);
+			$(this).text("Читать польностью... ");
+		} else {
+			$(".seo").animate({height: autoHeight}, 300, function () {
+				$(this).css("height", "auto"); // Сбрасываем height после анимации
+			});
+
+			$(this).text("Свернуть");
+		}
+		isOpen = !isOpen;
+	});
 }
 if (document.readyState !== "loading") {
 	eventHandler();

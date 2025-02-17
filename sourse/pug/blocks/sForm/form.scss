@@ -1,0 +1,286 @@
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 {
+	display: flex;
+	justify-content: flex-start;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item {
+	width: 100%;
+	padding: 0;
+	margin-bottom: 16px;
+	min-height: 42px;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content {
+	color: #292b33;
+	line-height: 1.4;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content ul,
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content ol {
+	padding-left: 32px;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content ul,
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content ol,
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content li,
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content blockquote,
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content pre {
+	margin: 8px 0 0 0;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content ul:first-child,
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content ol:first-child,
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content li:first-child,
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26
+	.form__item_styled-content
+	blockquote:first-child,
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content pre:first-child {
+	margin-top: 0;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content a {
+	color: #3eca73;
+	text-decoration: none;
+	font-weight: normal;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content a:hover {
+	text-decoration: underline;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content blockquote {
+	color: #292b33;
+	line-height: 1.4;
+	font-size: 12px;
+	padding: 0 0 0 4px;
+	border-left: 2px solid #3eca73;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content code {
+	background-color: #f6f7f8;
+	font-family: monospace;
+	font-size: 12px;
+	border-radius: 8px;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content p {
+	color: #292b33;
+	margin: 8px 0 0 0;
+	line-height: 1.4em;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content p:first-child {
+	margin-top: 0;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content p:empty {
+	min-height: 1.4em;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content blockquote + p,
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content ul + p,
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content ol + p,
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_styled-content pre + p {
+	margin-top: 8px;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_inline {
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item_inline .form__label {
+	margin: 0 16px 0 0;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item:last-child {
+	margin-bottom: 0;
+} /* кнопка */
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__button {
+	// display: block;
+	// cursor: pointer;
+	// border: none;
+	// text-align: center;
+	// font-weight: 500;
+	// color: #ffffff;
+	// padding: 11px 16px;
+	// background: #3eca73;
+	// border-radius: 8px;
+	// filter: drop-shadow(0px 10px 15px #3eca7355)
+	// 	drop-shadow(0px 5px 5px #3eca7333) drop-shadow(0px 2px 2px #3eca7311);
+}
+// #mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__button.form__button_disabled {
+// 	background: #aeaeae;
+// 	filter: drop-shadow(0px 10px 15px rgba(110, 110, 110, 0.3))
+// 		drop-shadow(0px 5px 5px rgba(110, 110, 110, 0.2))
+// 		drop-shadow(0px 2px 2px rgba(110, 110, 110, 0.2));
+// }
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__button_wrap {
+	display: flex;
+	justify-content: flex-start;
+} /* инпут */
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__input {
+	outline: none;
+	width: 100%;
+	padding: 8px 0;
+	background: transparent;
+	border: 1px solid $secondary;
+	// border-radius: 8px;
+} /* выпадающий список и все для него */
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__dropdown {
+	position: relative;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__dropdown__header {
+	cursor: pointer;
+	display: block;
+	position: relative;
+	width: 100%;
+	color: #292b33;
+	padding: 8px;
+	background: #f6f7f8;
+	border: 1px solid #d4d4d4;
+	border-radius: 8px;
+	height: 34px;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26
+	.form__dropdown.multiple
+	.form__dropdown__header {
+	display: flex;
+	padding: 4px 30px 4px 4px;
+	flex-wrap: wrap;
+	min-height: 34px;
+	height: auto;
+	gap: 6px;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__dropdown__value {
+	cursor: default;
+	display: flex;
+	gap: 6px;
+	padding: 0px 5px;
+	border: 1px solid #d4d4d4;
+	border-radius: 3px;
+	background-color: #f6f7f8;
+	align-items: center;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__dropdown__value_remove {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__dropdown__header::after {
+	display: block;
+	content: "";
+	border: 5px solid transparent;
+	border-top: 5px solid #939393;
+	position: absolute;
+	top: 14px;
+	right: 14px;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__dropdown__header.active::after {
+	display: none;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .close__icon {
+	display: none;
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 24px;
+	height: 24px;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26
+	.form__dropdown__header.active
+	+ .close__icon {
+	display: block;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26
+	.form__dropdown__checkbox_hidden:checked
+	~ .form__dropdown__header::after {
+	transform: rotate(180deg) translateY(5px);
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__dropdown__checkbox_hidden {
+	position: absolute;
+	visibility: hidden;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__dropdown__content {
+	display: none;
+	position: absolute;
+	width: 100%;
+	z-index: 2;
+	border: 1px solid #d4d4d4;
+	border-radius: 8px;
+	background: #f6f7f8;
+	max-height: 360px;
+	overflow-y: auto;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26
+	.form__dropdown__checkbox_hidden:checked
+	~ .form__dropdown__content {
+	display: block;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__dropdown__option {
+	width: 100%;
+	color: #292b33;
+	padding: 8px;
+	background: #f6f7f8;
+	cursor: pointer;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__dropdown__option.selected {
+	display: none;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__dropdown__option:first-child {
+	border-radius: 8px 8px 0 0;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__dropdown__option:last-child {
+	border-radius: 0 0 8px 8px;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__dropdown__option:hover {
+	background: #3eca73;
+	color: #ffffff;
+} /* Чекбокс и все для него */
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__checkbox_hidden {
+	position: absolute;
+	visibility: hidden;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__checkbox {
+	width: 24px;
+	height: 24px;
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__checkbox__icon {
+	display: block;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26
+	.form__checkbox_hidden:checked
+	~ .form__checkbox
+	.form__checkbox__icon {
+	display: none;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__checkbox__icon_checked {
+	display: none;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26
+	.form__checkbox_hidden:checked
+	~ .form__checkbox
+	.form__checkbox__icon_checked {
+	display: block;
+} /* лейбл */
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__label {
+	margin: 0;
+	margin-bottom: 4px;
+	color: #292b33;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__label_required::after {
+	position: relative;
+	content: " *";
+	color: red;
+} /* ошибка */
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__error {
+	color: red;
+	display: none;
+	text-align: center;
+} /* успешный текст */
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .success {
+	padding: 20px 24px;
+	text-align: center;
+	font-size: 32px;
+	color: #292b33;
+	display: none;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item.error input {
+	border-color: red;
+}
+#mp45c48cce2e2d7fbdea1afc51c7c6ad26 .form__item .form__error {
+	font-size: 12px;
+	display: none;
+	color: red;
+	text-align: left;
+	margin: 2px 0 0;
+}

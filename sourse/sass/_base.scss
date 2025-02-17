@@ -491,3 +491,24 @@ iframe {
 		height: auto;
 	}
 }
+
+.seo {
+	overflow: hidden;
+	height: 10em;
+	font-size: 12px;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 80%;
+		width: 100%;
+		background: linear-gradient(0deg, #f6f7f8 0%, rgba(246, 247, 248, 0) 100%);
+		opacity: var(--op, 1);
+		pointer-events: none;
+	}
+}
+.opened {
+	--op: 0;
+}

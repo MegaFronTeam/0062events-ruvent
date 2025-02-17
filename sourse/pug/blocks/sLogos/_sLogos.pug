@@ -1,14 +1,13 @@
 mixin sLogos(data)
 	// start sLogos
 	+b.sLogos#sLogos&attributes(attributes) 
+		.container.text-secondary Нам доверяют свои мероприятия:
 		+e.slider--js.swiper
 			.swiper-wrapper
 				mixin item(i)
 					+e.slide.swiper-slide
 						+e.img-wrap
 							+img(`img/logo-${i}.png`)
-				- for (var x = 1; x < 7; x++)
-					+item(x)
-				- for (var x = 1; x < 7; x++)
-					+item(x)
+				- for (var x = 1; x < 37; x++)
+					+item(x) 
 	// end sLogos
