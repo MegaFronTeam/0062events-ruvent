@@ -215,7 +215,7 @@ main {
 
 strong,
 .strong {
-	font-weight: bold;
+	font-weight: 600;
 }
 
 ul {
@@ -477,4 +477,11 @@ iframe {
 		height: 100%;
 		object-fit: cover;
 	}
+}
+
+.btn-success {
+	--bs-btn-color: #fff;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-active-color: #fff;
+	--bs-btn-disabled-color: #fff;
 }

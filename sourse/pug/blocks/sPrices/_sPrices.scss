@@ -3,26 +3,75 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
-	
-	&__row{
+
+	&__row {
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
 	}
-	.section-title{
-		
+	.section-title {
 	}
-	&__col{
-		
+	&__col {
 	}
-	&__item{
-		
+	&__item {
 	}
 
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
-	@include media-breakpoint-between(md, xl) {}
-	@include media-breakpoint-only(xl) {}
-	@include media-breakpoint-down(xl) {}
+	&__table-wrap {
+		overflow-x: auto;
+
+		margin-bottom: rem(60);
+	}
+
+	table {
+		width: 100%;
+		min-width: 700px;
+		text-align: center;
+		th,
+		td {
+			padding-block: rem(25);
+			border-bottom: 1px solid #f0f2f4;
+		}
+		th,
+		td {
+			&:nth-child(1) {
+				text-align: left;
+				position: sticky;
+				left: 0;
+				z-index: 2;
+				@include media-breakpoint-up(xl) {
+					width: 317px;
+				}
+				@include media-breakpoint-up(sm) {
+					width: rem(260);
+				}
+				width: rem(200);
+				background-color: rgba($body-bg, 0.8);
+			}
+		}
+		td {
+			&:nth-child(n + 2) {
+				@include rfs(24px);
+				font-weight: 600;
+			}
+		}
+	}
+	.small {
+		@include media-breakpoint-up(sm) {
+			font-size: rem(12);
+		}
+		font-size: rem(8);
+	}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
 } // end.sPrices
