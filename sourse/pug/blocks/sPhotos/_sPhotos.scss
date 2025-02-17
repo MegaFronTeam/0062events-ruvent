@@ -18,6 +18,15 @@
 	&__slide {
 		width: auto;
 		margin-right: 2px;
+		margin-bottom: 2px;
+		height: rem(200);
+		@include media-breakpoint-up(md) {
+			height: rem(300);
+		}
+		img {
+			height: 100%;
+			max-width: 100%;
+		}
 	}
 
 	@include media-breakpoint-up(xl) {

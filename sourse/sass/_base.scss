@@ -123,27 +123,7 @@ main {
 	h2 {
 		display: inline-block;
 		span {
-			/* Почему нам доверяют */
-
-			width: 699.02px;
-			height: 52px;
-
-			/* heading/H2 */
-			font-family: "Onest";
-			font-style: normal;
-			// font-weight: 600;
-			font-size: 48px;
-			line-height: 52px;
-			/* identical to box height, or 108% */
-			align-items: center;
-
-			color: #292b33;
-
-			/* Inside auto layout */
-			flex: none;
-			order: 0;
-			flex-grow: 0;
-
+			display: inline-block;
 			background: linear-gradient(110.29deg, #3d58b0 16.87%, #2dcb70 91.34%);
 
 			leading-trim: both;
@@ -484,4 +464,24 @@ iframe {
 	--bs-btn-hover-color: #fff;
 	--bs-btn-active-color: #fff;
 	--bs-btn-disabled-color: #fff;
+}
+
+.icon-wrap {
+	/* Frame 2668 */
+
+	/* Auto layout */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	width: rem(64px);
+	aspect-ratio: 1/1;
+
+	background: rgba(61, 88, 176, 0.05);
+	border-radius: rem(20px);
+	img {
+		max-width: 70%;
+		height: auto;
+	}
 }

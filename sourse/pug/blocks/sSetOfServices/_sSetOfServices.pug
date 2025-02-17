@@ -2,8 +2,17 @@ mixin sSetOfServices(data)
 	// start sSetOfServices
 	+b.SECTION.sSetOfServices.section#sSetOfServices&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sSetOfServices
+			+b.section-title
+				h2 #[span Комплекс услуг] под ключ включает в себя:
 				
-			+e.row.row
+			+ddGroup()
+				+ddGroupItem('Программное обеспечение', 'active','Собственное программное обеспечение обеспечивает надежную, быструю и безопасную аккредитацию участников. Возможна интеграция с информационными системами и CRM-платформами.', 'img/svg/sSetOfServices-i-1.svg')
+
+				+ddGroupItem('Оборудование ', 'active','Все необходимое оборудование для аккредитации, контроля доступа сбора цифрового следа, включая ноутбуки, принтеры, турникеты, ТСД и сканеры, обеспечивают бесперебойную работу.',  'img/svg/sSetOfServices-i-2.svg')
+
+				+ddGroupItem('Расходные материалы', 'active','Широкий ассортимент бейджей, лент и браслетов различных форматов и дизайнов', 'img/svg/sSetOfServices-i-3.svg')
+
+				+ddGroupItem('Персонал', 'active','Надежный и проверенный персонал, эффективно выполнит все поставленные задачи' , 'img/svg/sSetOfServices-i-4.svg')
+ 
+
 	// end sSetOfServices

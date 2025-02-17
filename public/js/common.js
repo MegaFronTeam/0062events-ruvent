@@ -60,6 +60,16 @@ function eventHandler() {
 		freeModeMomentum: true,
 	});
 
+	new Swiper(".sLogos__slider--js", {
+		loop: true,
+		slidesPerView: "auto",
+		speed: 16000,
+		autoplay: {
+			delay: 100,
+			disableOnInteraction: false,
+		},
+	});
+
 	new Swiper(".slider-auto-js", {
 		slidesPerView: "auto",
 	});

@@ -1,9 +1,15 @@
 mixin sLogos(data)
 	// start sLogos
-	+b.SECTION.sLogos.section#sLogos&attributes(attributes)
+	+b.sLogos#sLogos&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sLogos
-				
-			+e.row.row
+			+e.slider--js.swiper
+				.swiper-wrapper
+					mixin item(i)
+						+e.slide.swiper-slide
+							+e.img-wrap
+								+img(`img/logo-${i}.png`)
+					- for (var x = 1; x < 7; x++)
+						+item(x)
+					- for (var x = 1; x < 7; x++)
+						+item(x)
 	// end sLogos

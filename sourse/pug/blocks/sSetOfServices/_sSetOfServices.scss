@@ -3,26 +3,94 @@
 	// --sPT: #{rem()};
 	// --sPB: #{rem()};
 	// --sTPB: #{rem()};
-	
-	&__row{
+	background-color: $light;
+	&__row {
 		// --bs-gutter-x: #{rem()};
 		// --bs-gutter-y: #{rem()};
 	}
-	.section-title{
-		
+	.section-title {
 	}
-	&__col{
-		
+	&__col {
 	}
-	&__item{
-		
+	&__item {
 	}
 
-	@include media-breakpoint-up(xl) {}
-	@include media-breakpoint-up(lg) {}
-	@include media-breakpoint-up(md) {}
-	@include media-breakpoint-up(sm) {}
-	@include media-breakpoint-between(md, xl) {}
-	@include media-breakpoint-only(xl) {}
-	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
 } // end.sSetOfServices
+
+.dd-group {
+	@include media-breakpoint-up(lg) {
+		--sp: 40px;
+		--grid: 72px;
+	}
+	--sp: 30px;
+	--grid: 52px;
+	.icon-wrap {
+		width: var(--grid);
+	}
+	&__head {
+		display: grid;
+		gap: var(--sp);
+		grid-template-columns: auto 1fr auto;
+		padding: var(--sp);
+		cursor: pointer;
+		div {
+			&:nth-child(1) {
+				@include media-breakpoint-down(md) {
+					grid-column: span 2;
+				}
+			}
+			&:nth-child(2) {
+				@include media-breakpoint-down(md) {
+					grid-row: 2;
+					grid-column: span 3;
+				}
+			}
+		}
+	}
+
+	&__content {
+		padding: 0 var(--sp) var(--sp);
+	}
+	&__arrow {
+		position: relative;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: rem(24);
+			height: rem(2);
+			translate: -50% -50%;
+			background-color: $primary;
+		}
+		&::before {
+		}
+		&::after {
+			transform: rotate(var(--rotate, 90deg));
+			@include mt;
+		}
+	}
+	&__item {
+		background-color: #fff;
+		border-radius: rem(24);
+		margin-bottom: rem(20);
+		&.active {
+			--rotate: 0;
+		}
+	}
+}

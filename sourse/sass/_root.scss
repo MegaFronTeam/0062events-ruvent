@@ -2,9 +2,9 @@
 	--animate-delay: 1.2s;
 	--bs-body-font-size: #{$em-base};
 
-	--sPT: #{rem(80)};
-	--sPB: #{rem(80)};
-	--sTPB: #{rem(60)};
+	--sPT: #{rem(60)};
+	--sPB: #{rem(60)};
+	--sTPB: #{rem(40)};
 
 	--fancybox-content-color: var(--bs-body-color);
 	--swiperArrowSize: #{rem(68)};
@@ -17,6 +17,11 @@
 	--swiperColorDefHover: var(--bs-primary);
 	--swiperBgDefHover: #ffffff;
 
+	@include media-breakpoint-up(lg) {
+		--sTPB: #{rem(60)};
+		--sPT: #{rem(80)};
+		--sPB: #{rem(80)};
+	}
 	//  --carousel-button-width: 48px;
 	//  --carousel-button-height: 48px;
 
