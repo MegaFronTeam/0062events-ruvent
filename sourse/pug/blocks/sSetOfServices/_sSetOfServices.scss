@@ -49,7 +49,7 @@
 		--sp: 40px;
 		--grid: 72px;
 	}
-	--sp: 30px;
+	--sp: 20px;
 	--grid: 52px;
 	.icon-wrap {
 		width: var(--grid);
@@ -111,16 +111,16 @@
 
 	&__img-wrap {
 		position: relative;
-		// z-index: 2;
+		z-index: 2;
 		&::after,
 		&::before {
 			content: "";
 			position: absolute;
 			z-index: -1;
-			width: 352.47px;
+			width: 70%;
 			opacity: 0.5;
 			filter: blur(44.35px);
-			height: 352.47px;
+			aspect-ratio: 1;
 		}
 		&::after {
 			background: $success;

@@ -43,9 +43,9 @@
 			content: "";
 			position: absolute;
 			z-index: -2;
-			width: 352.47px;
+			width: 100%;
 			filter: blur(154.35px);
-			height: 352.47px;
+			aspect-ratio: 1;
 		}
 		&::after {
 			background: $success;
