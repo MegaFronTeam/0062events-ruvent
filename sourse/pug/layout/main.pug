@@ -29,20 +29,15 @@ html(lang="ru")
 		//- 		}, { passive: true });
 		//- 	}
 		meta(name="viewport", content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover")
-		link(type="image/ico", href='img/favicon.ico', rel='shortcut icon') 
+
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#3361d8">
 		<meta name="format-detection" content="telephone=no"> 
-		+allcss()
-		script.
-			function addBlock(elem) {
-				fetch(`parts/${elem}.html`)
-					.then(response => response.text())
-					.then( text => {
-						const wrap = document.querySelector(`#${elem}Wrap`);
-						wrap.insertAdjacentHTML('afterend', text);
-						wrap.previousElementSibling.remove()
-						wrap.remove();
-					});
-			}
+		+allcss() 
 	block variables
 	//- style.
 	//- 	.loaded_hiding {  opacity: 0; pointer-events: none;  } .loaded_hiding::before { display: none; }

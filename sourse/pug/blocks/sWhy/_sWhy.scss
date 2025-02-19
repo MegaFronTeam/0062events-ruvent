@@ -19,7 +19,7 @@
 		overflow: visible;
 	}
 	.swiper-wrapper {
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(xxl) {
 			transform: none !important;
 		}
 	}

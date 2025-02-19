@@ -1,8 +1,8 @@
 // start .headerBlock
 .headerBlock {
-	// --sPT: #{rem()};
-	// --sPB: #{rem()};
-	// --sTPB: #{rem()};
+	--sPT: #{rem(60)};
+	--sPB: #{rem(60)};
+	--sTPB: #{rem(35)};
 
 	text-align: left;
 	&__row {
@@ -10,6 +10,12 @@
 		--bs-gutter-y: var(--bs-gutter-x);
 	}
 	.section-title {
+		p {
+			margin-top: em(8);
+			@include rfs(24px);
+			max-width: rem(560);
+			line-height: 1.2;
+		}
 	}
 	&__col {
 	}
@@ -20,7 +26,7 @@
 	}
 
 	.btn {
-		margin-top: rem(40);
+		// margin-top: rem(40);
 	}
 	&__row {
 		justify-content: space-between;
@@ -31,8 +37,12 @@
 	}
 	&__slider-wrap {
 		position: relative;
+		margin-top: 10px;
 		z-index: 2;
 		max-width: rem(550);
+		@include media-breakpoint-up(xxl) {
+			margin-right: 20px;
+		}
 		@include media-breakpoint-up(lg) {
 			margin-right: 0;
 		}
@@ -90,6 +100,13 @@
 		// left: 8%;
 	}
 
+	// margin-right: rem();
+	&__row {
+		.strong {
+			line-height: 1.2;
+		}
+		margin-bottom: 0;
+	}
 	@include media-breakpoint-up(xl) {
 	}
 

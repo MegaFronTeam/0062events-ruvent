@@ -10,7 +10,7 @@ $output-bourbon-deprecation-warnings: false;
 // @import "../../node_modules/rfs/scss";
 @import "../libs/@fancyapps/ui/fancybox/fancybox.css";
 @import "../../node_modules/select2/src/scss/core.scss";
-@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/swiper-bundle";
 
 @import "mixin";
 // Layout & components

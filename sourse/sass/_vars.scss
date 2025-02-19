@@ -789,7 +789,7 @@ $table-variants: (
 $input-btn-padding-y:         rem(12);
 $input-btn-padding-x:         rem(24);
 $input-btn-font-family:       null !default;
-$input-btn-font-size:         $font-size-base !default;
+$input-btn-font-size:         rem(20);
 $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:         $focus-ring-width !default;

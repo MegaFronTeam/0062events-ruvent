@@ -19,7 +19,7 @@ mixin ddGroupItem(txt, activeClasses='', sub, i)
 			div
 				div=txt
 				if sub
-					.text-secondary= sub
+					div= sub
 			+e.arrow.icon-wrap
 				
 		+e.content.dd-content-js(class=activeClasses)

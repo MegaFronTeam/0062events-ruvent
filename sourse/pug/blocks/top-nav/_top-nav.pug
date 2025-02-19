@@ -35,19 +35,19 @@ mixin top-nav()
 							+mnu()
 							.d-lg-none
 								.my-4
-									+e.link(href="mailto:hi@ruvents.com").text-body
+									+e.link(href="mailto:hi@ruvents.com").text-primary
 										+icon("email")
 										| hi@ruvents.com
 								.mb-4
-									+e.link(href="mailto:+7(495)109-02-00p2").text-primary 
+									+e.link(href="tel:+7(495)109-02-00;ext=2").text-body 
 										+icon("tel")
 										| +7 (495) 109-02-00 доб. 2 
 				.col-auto
-					+e.link(href="mailto:hi@ruvents.com").text-body
+					+e.link(href="mailto:hi@ruvents.com").text-primary
 						+icon("email")
 						span.d-none.d-xl-inline hi@ruvents.com
 				.col-auto
-					+e.link(href="mailto:+7(495)109-02-00p2").text-primary 
+					+e.link(href="tel:+7(495)109-02-00;ext=2").text-body 
 						+icon("tel")
 						span.d-none.d-xl-inline +7 (495) 109-02-00 доб. 2 
 				.col-auto.d-lg-none

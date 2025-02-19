@@ -37,6 +37,7 @@ function eventHandler() {
 			el: " .swiper-pagination",
 			type: "bullets",
 			clickable: true,
+
 			// renderBullet: function (index, className) {
 			// 	return '<span class="' + className + '">' + (index + 1) + '</span>';
 			// }
@@ -53,35 +54,29 @@ function eventHandler() {
 		},
 	});
 
-	new Swiper(".breadcrumb-slider--js", {
-		slidesPerView: "auto",
-		freeMode: true,
-		watchOverflow: true,
-	});
-
-	const swiper4 = new Swiper(".sBanners__slider--js", {
-		// slidesPerView: 5,
-		...defaultSl,
-		slidesPerView: "auto",
-		freeMode: true,
-		loopFillGroupWithBlank: true,
-		touchRatio: 0.2,
-		slideToClickedSlide: true,
-		freeModeMomentum: true,
-	});
-
 	new Swiper(".sLogos__slider--js", {
 		loop: true,
 		slidesPerView: "auto",
 		speed: 16000,
+
 		autoplay: {
 			delay: 100,
 			disableOnInteraction: false,
+			draggable: true,
 		},
 	});
 
 	new Swiper(".slider-auto-js", {
 		slidesPerView: "auto",
+		mousewheel: true,
+		freeMode: true,
+
+		scrollbar: {
+			el: ".slider-auto-js .swiper-scrollbar",
+			hide: true,
+			draggable: true,
+			hide: false,
+		},
 	});
 
 	const swiperEl = document.querySelectorAll(".sPhotos__slider--js");
@@ -92,8 +87,12 @@ function eventHandler() {
 
 		new Swiper(el, {
 			loop: true,
+			mousewheelControl: true,
 			slidesPerView: "auto",
+			freeMode: true,
+			followFinger: true,
 			speed: 16000,
+
 			autoplay: {
 				delay: parseInt(autoplaySpeed),
 				disableOnInteraction: false,

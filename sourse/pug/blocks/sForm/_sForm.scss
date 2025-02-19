@@ -37,6 +37,29 @@
 		margin-top: auto;
 		margin-bottom: 16px;
 	}
+
+	.item__description {
+		position: relative;
+	}
+
+	textarea {
+		& + .text-label {
+			position: absolute;
+			padding-left: em(20);
+			top: rem(30);
+			left: 0;
+			opacity: 0.5;
+			font-size: rem(12);
+			width: 100%;
+			pointer-events: none;
+			// @include mt;
+		}
+
+		&:focus-visible ~ .text-label {
+			opacity: 0;
+		}
+	}
+
 	@include media-breakpoint-up(xl) {
 	}
 	@include media-breakpoint-up(lg) {

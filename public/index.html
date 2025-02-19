@@ -5,23 +5,16 @@
 		<title>Главная</title>
 		<meta name="description" content="о чем страница">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover">
-		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> <link rel="preconnect" href="https://fonts.googleapis.com">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no, viewport-fit=cover"><link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#3361d8">
+<meta name="format-detection" content="telephone=no"> <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
 		<link href="css/main.min.css" rel="stylesheet"/>
-		<script>
-			function addBlock(elem) {
-				fetch(`parts/${elem}.html`)
-					.then(response => response.text())
-					.then( text => {
-						const wrap = document.querySelector(`#${elem}Wrap`);
-						wrap.insertAdjacentHTML('afterend', text);
-						wrap.previousElementSibling.remove()
-						wrap.remove();
-					});
-			}
-		</script>
 	</head>
 	<body class="main-page" data-bg="main.jpg">
 		<div class="main-wrapper">
@@ -53,14 +46,14 @@
 									</nav>
 									<div class="d-lg-none">
 										<div class="my-4">
-											<a class="top-nav__link text-body" href="mailto:hi@ruvents.com">
+											<a class="top-nav__link text-primary" href="mailto:hi@ruvents.com">
 												<svg class="icon icon-email ">
 													<use xlink:href="img/svg/sprite.svg#email"></use>
 												</svg>hi@ruvents.com
 											</a>
 										</div>
 										<div class="mb-4">
-											<a class="top-nav__link text-primary" href="mailto:+7(495)109-02-00p2"> 
+											<a class="top-nav__link text-body" href="tel:+7(495)109-02-00;ext=2"> 
 												<svg class="icon icon-tel ">
 													<use xlink:href="img/svg/sprite.svg#tel"></use>
 												</svg>+7 (495) 109-02-00 доб. 2 
@@ -71,14 +64,14 @@
 							</div>
 						</div>
 						<div class="col-auto">
-							<a class="top-nav__link text-body" href="mailto:hi@ruvents.com">
+							<a class="top-nav__link text-primary" href="mailto:hi@ruvents.com">
 								<svg class="icon icon-email ">
 									<use xlink:href="img/svg/sprite.svg#email"></use>
 								</svg><span class="d-none d-xl-inline">hi@ruvents.com</span>
 							</a>
 						</div>
 						<div class="col-auto">
-							<a class="top-nav__link text-primary" href="mailto:+7(495)109-02-00p2"> 
+							<a class="top-nav__link text-body" href="tel:+7(495)109-02-00;ext=2"> 
 								<svg class="icon icon-tel ">
 									<use xlink:href="img/svg/sprite.svg#tel"></use>
 								</svg><span class="d-none d-xl-inline">+7 (495) 109-02-00 доб. 2 </span>
@@ -103,21 +96,7 @@
 										<div class="swiper-wrapper">
 											<div class="headerBlock__slide swiper-slide"><img src="img/head-img.jpg" alt="" loading="lazy"/>
 											</div>
-											<div class="headerBlock__slide swiper-slide"><img src="img/head-img.jpg" alt="" loading="lazy"/>
-											</div>
-											<div class="headerBlock__slide swiper-slide"><img src="img/head-img.jpg" alt="" loading="lazy"/>
-											</div>
 										</div>
-									</div>
-									<div class="swiper-button-hand swiper-button-hand-prev swiper-button-prev">
-										<svg class="icon icon-arrow-left ">
-											<use xlink:href="img/svg/sprite.svg#arrow-left"></use>
-										</svg>
-									</div>
-									<div class="swiper-button-hand swiper-button-hand-next swiper-button-next">
-										<svg class="icon icon-arrow-right ">
-											<use xlink:href="img/svg/sprite.svg#arrow-right"></use>
-										</svg>
 									</div>
 								</div>
 							</div>
@@ -318,6 +297,7 @@
 									<div class="sWhy__slide swiper-slide"><strong>Стоимость</strong>Прозрачные цены и подробные расчеты смет.
 									</div>
 							</div>
+							<div class="swiper-scrollbar"></div>
 						</div>
 					</div>
 				</section>
@@ -329,18 +309,18 @@
 							<h2><span>Комплекс услуг</span> под ключ включает в себя:</h2>
 						</div>
 						<div class="dd-group dd-group-js">
-							<div class="dd-group__item active">
+							<div class="dd-group__item">
 								<div class="dd-group__head dd-head-js">
 									<div class="icon-wrap"><img src="img/svg/sSetOfServices-i-1.svg" alt="" loading="lazy"/>
 									</div>
 									<div>
 										<div>Программное обеспечение</div>
-										<div class="text-secondary">Собственное программное обеспечение обеспечивает надежную, быструю и безопасную аккредитацию участников. Возможна интеграция с информационными системами и CRM-платформами.</div>
+										<div>Собственное программное обеспечение обеспечивает надежную, быструю и безопасную аккредитацию участников. Возможна интеграция с информационными системами и CRM-платформами.</div>
 									</div>
 									<div class="dd-group__arrow icon-wrap">
 									</div>
 								</div>
-								<div class="dd-group__content dd-content-js active">
+								<div class="dd-group__content dd-content-js">
 									<div class="row">
 										<div class="col-lg-6">
 											<h5>Наш программный комплекс внесен в <span class="text-primary">реестр российского программного обеспечения</span> Минцифры и обеспечивает:</h5>
@@ -362,18 +342,18 @@
 									</div>
 								</div>
 							</div>
-							<div class="dd-group__item active">
+							<div class="dd-group__item">
 								<div class="dd-group__head dd-head-js">
 									<div class="icon-wrap"><img src="img/svg/sSetOfServices-i-2.svg" alt="" loading="lazy"/>
 									</div>
 									<div>
 										<div>Оборудование </div>
-										<div class="text-secondary">Все необходимое оборудование для аккредитации, контроля доступа сбора цифрового следа, включая ноутбуки, принтеры, турникеты, ТСД и сканеры, обеспечивают бесперебойную работу.</div>
+										<div>Все необходимое оборудование для аккредитации, контроля доступа сбора цифрового следа, включая ноутбуки, принтеры, турникеты, ТСД и сканеры, обеспечивают бесперебойную работу.</div>
 									</div>
 									<div class="dd-group__arrow icon-wrap">
 									</div>
 								</div>
-								<div class="dd-group__content dd-content-js active">
+								<div class="dd-group__content dd-content-js">
 									<div class="dd-group__row-gal row g-4">
 										<div class="col-lg-3 col-6">
 											<div class="dd-group__img-wrap-gal" data-fancybox="modal-gal" data-src="img/tab-1/tab-1-1.jpg"><img src="img/tab-1/tab-1-1.jpg" alt="" loading="lazy"/>
@@ -394,18 +374,18 @@
 									</div>
 								</div>
 							</div>
-							<div class="dd-group__item active">
+							<div class="dd-group__item">
 								<div class="dd-group__head dd-head-js">
 									<div class="icon-wrap"><img src="img/svg/sSetOfServices-i-3.svg" alt="" loading="lazy"/>
 									</div>
 									<div>
 										<div>Расходные материалы</div>
-										<div class="text-secondary">Широкий ассортимент бейджей, лент и браслетов различных форматов и дизайнов</div>
+										<div>Широкий ассортимент бейджей, лент и браслетов различных форматов и дизайнов</div>
 									</div>
 									<div class="dd-group__arrow icon-wrap">
 									</div>
 								</div>
-								<div class="dd-group__content dd-content-js active">
+								<div class="dd-group__content dd-content-js">
 									<div class="dd-group__row-gal row g-4">
 										<div class="col-lg-3 col-6">
 											<div class="dd-group__img-wrap-gal" data-fancybox="modal-gal" data-src="img/tab-2/tab-2-1.jpg"><img src="img/tab-2/tab-2-1.jpg" alt="" loading="lazy"/>
@@ -426,18 +406,18 @@
 									</div>
 								</div>
 							</div>
-							<div class="dd-group__item active">
+							<div class="dd-group__item">
 								<div class="dd-group__head dd-head-js">
 									<div class="icon-wrap"><img src="img/svg/sSetOfServices-i-4.svg" alt="" loading="lazy"/>
 									</div>
 									<div>
 										<div>Персонал</div>
-										<div class="text-secondary">Надежный и проверенный персонал, эффективно выполнит все поставленные задачи</div>
+										<div>Надежный и проверенный персонал, эффективно выполнит все поставленные задачи</div>
 									</div>
 									<div class="dd-group__arrow icon-wrap">
 									</div>
 								</div>
-								<div class="dd-group__content dd-content-js active">
+								<div class="dd-group__content dd-content-js">
 									<div class="dd-group__row-gal row g-4">
 										<div class="col-lg-3 col-6">
 											<div class="dd-group__img-wrap-gal" data-fancybox="modal-gal" data-src="img/tab-3/tab-3-1.jpg"><img src="img/tab-3/tab-3-1.jpg" alt="" loading="lazy"/>
@@ -449,10 +429,6 @@
 										</div>
 										<div class="col-lg-3 col-6">
 											<div class="dd-group__img-wrap-gal" data-fancybox="modal-gal" data-src="img/tab-3/tab-3-3.jpg"><img src="img/tab-3/tab-3-3.jpg" alt="" loading="lazy"/>
-											</div>
-										</div>
-										<div class="col-lg-3 col-6">
-											<div class="dd-group__img-wrap-gal" data-fancybox="modal-gal" data-src="img/tab-3/tab-3-4.jpg"><img src="img/tab-3/tab-3-4.jpg" alt="" loading="lazy"/>
 											</div>
 										</div>
 										<div class="col-lg-3 col-6">
@@ -499,6 +475,7 @@
 										<p>Отправки рассылок, пригласительных с QR-кодами, сертификатов и благодарственных писем. Автоматическая отправка писем с информацией о регистрации, статусе заявки и приглашениями.</p>
 									</div>
 							</div>
+							<div class="swiper-scrollbar"></div>
 						</div>
 					</div>
 				</section>
@@ -828,8 +805,19 @@
 				class="form__input"
 				id=""
 				rows="6"
-				placeholder="Дата и время проведения мероприятия? Город и место проведения мероприятия? Кол-во посетителей (расходных материалов)? Пожелания по расходным материалам (лента с нанесением или без и др.)?"
+				placeholder=""
 			></textarea>
+			<div class="text-label">
+				<ul>
+					<li>Дата и время проведения мероприятия?</li>
+					<li>Город и место проведения мероприятия?</li>
+					<li>Кол-во посетителей (расходных материалов)?</li>
+					<li>
+						Пожелания по расходным материалам (лента с нанесением или без и
+						др.)?
+					</li>
+				</ul>
+			</div>
 
 			<p class="form__error"></p>
 		</div>
@@ -877,12 +865,12 @@
 								<div>
 									<a class="sForm__link" href="mailto:hi@ruvents.com"> hi@ruvents.com
 									</a><br/>
-									<a class="sForm__link" href="mailto:+7(495)109-02-00p2">+7 (495) 109-02-00 <small>доб. 2 </small>
+									<a class="sForm__link" href="mailto:+7(495)109-02-00;ext=2">+7 (495) 109-02-00 <small>доб. 2 </small>
 									</a>
 								</div>
 								<div class="sForm__footer">
 									<p>ООО «РУВЕНТС» <br/>ОГРН 1147746160320<br/>ИНН 7703806326</p>
-									<p>127055 г. Москва, ул. Образцова д.7 подъезд 3, </p>
+									<p>127055 г. Москва, ул. Образцова д.7 подъезд Д </p>
 									<div class="row">
 										<div class="col-auto"><a href="#">Политика конфиденциальности</a></div>
 										<div class="col-auto"><a href="#"> Пользовательское соглашение </a></div>

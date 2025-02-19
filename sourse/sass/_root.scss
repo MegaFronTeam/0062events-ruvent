@@ -15,6 +15,8 @@
 	--swiperColorDefHover: var(--bs-primary);
 	--swiperBgDefHover: #ffffff;
 
+	// --swiper-scrollbar-sides-offset: 0;
+	--swiper-scrollbar-bottom: -14px;
 	@include media-breakpoint-up(lg) {
 		--swiperArrowPosition: calc(-1 * var(--swiperArrowSize) / 2);
 	}
@@ -22,15 +24,11 @@
 		--sTPB: #{rem(60)};
 		--sPT: #{rem(80)};
 		--sPB: #{rem(80)};
-	}
-	//  --carousel-button-width: 48px;
+	} //  --carousel-button-width: 48px;
 	//  --carousel-button-height: 48px;
-
 	//  --carousel-button-svg-width: 24px;
 	//  --carousel-button-svg-height: 24px;
-
-	//  --carousel-button-svg-stroke-width: 2.5;
-	//  --carousel-button-svg-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0/ 0.4));
+	//  --carousel-button-svg-stroke-width: 2.5; //  --carousel-button-svg-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0/ 0.4));
 }
 .fancybox__container {
 	--fancybox-bg: rgba(58, 59, 60, 0.77);
