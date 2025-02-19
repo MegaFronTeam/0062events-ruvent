@@ -68,8 +68,13 @@ function eventHandler() {
 
 	new Swiper(".slider-auto-js", {
 		slidesPerView: "auto",
-		mousewheel: true,
 		freeMode: true,
+
+		simulateTouch: true,
+		touchRatio: 1.5, // Увеличиваем чувствительность свайпа
+		touchAngle: 60, // Разрешаем свайп под углом до 60 градусов
+		grabCursor: true,
+		resistanceRatio: 0.85, // Смягчение при достижении границы
 
 		scrollbar: {
 			el: ".slider-auto-js .swiper-scrollbar",

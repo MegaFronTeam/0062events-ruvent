@@ -512,3 +512,12 @@ iframe {
 .opened {
 	--op: 0;
 }
+
+@include media-breakpoint-up(xxl) {
+	.swiper-wrapper {
+		cursor: default !important;
+	}
+	.swiper-scrollbar {
+		display: none !important;
+	}
+}
