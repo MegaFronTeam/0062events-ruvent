@@ -43,7 +43,10 @@
 	}
 
 	textarea {
-		& + .text-label {
+		&::placeholder {
+			opacity: 0;
+		}
+		& ~ .text-label {
 			position: absolute;
 			padding-left: em(20);
 			top: rem(30);
