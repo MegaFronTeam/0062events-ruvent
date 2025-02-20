@@ -1,5 +1,5 @@
 .pixel-perfect {
-	top: 0;
+	top: -988px;
 	pointer-events: none;
 	z-index: 1000;
 	background-repeat: no-repeat;
@@ -120,6 +120,7 @@ main {
 
 .section-title {
 	margin-bottom: var(--sTPB);
+	.h1,
 	h1,
 	h2 {
 		display: inline-block;
@@ -497,6 +498,23 @@ iframe {
 	height: 10em;
 	font-size: 12px;
 	position: relative;
+	h2 {
+		font-size: 2.4em;
+	}
+	h3 {
+		font-size: 2em;
+	}
+	h4 {
+		font-size: 1.8em;
+	}
+
+	h5 {
+		font-size: 1.6em;
+	}
+	h6 {
+		font-size: 1.4em;
+	}
+
 	&::before {
 		content: "";
 		position: absolute;

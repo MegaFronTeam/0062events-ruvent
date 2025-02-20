@@ -40,6 +40,22 @@
 		margin-top: 10px;
 		z-index: 2;
 		max-width: rem(550);
+		svg {
+			position: absolute;
+			@include a-cent1;
+			z-index: 3;
+		}
+
+		@for $i from 1 through 46 {
+			path:nth-child(#{$i}) {
+				opacity: 0;
+				$duration: random(20) * 0.1s + 2s;
+				$delay: random(20) * 0.5s;
+
+				animation: blink $duration infinite alternate $delay;
+			}
+		}
+
 		@include media-breakpoint-up(xxl) {
 			margin-right: 20px;
 		}
@@ -160,3 +176,15 @@
 }
 
 // end.headerBlock
+
+@keyframes blink {
+	0%,
+	40%,
+	60%,
+	100% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}

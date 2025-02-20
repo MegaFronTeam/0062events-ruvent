@@ -5,6 +5,7 @@ mixin headerBlock()
 			.row.gy-4
 				.col-lg-6.order-lg-last
 					+e.slider-wrap
+						include animate.svg
 						+e.slider--js.swiper
 							.swiper-wrapper
 								- for (var x = 0; x < 3; x++)
@@ -13,7 +14,8 @@ mixin headerBlock()
 						//- +arrow
 				.col-lg-6
 					+b.section-title
-						h1 #[span Аккредитация посетителей.] Комплексное решение для мероприятий
+						h1.mb-0 #[span Аккредитация посетителей.] 
+						.h1 Комплексное решение для мероприятий
 						p Печать бейджей, контроль доступа, электронные визитки, формы регистраций, рассылки билетов с QR-кодом
 					+e.row.row.gy-2 
 						.col-sm-4.col-6 
