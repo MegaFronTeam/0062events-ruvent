@@ -49,10 +49,10 @@
 		@for $i from 1 through 46 {
 			path:nth-child(#{$i}) {
 				opacity: 0;
-				$duration: random(20) * 0.1s + 3s;
+				$duration: random(20) * 0.2s + 3s;
 				$delay: random(20) * 0.5s;
 
-				animation: blink $duration infinite linear $delay;
+				animation: blink $duration infinite alternate $delay;
 			}
 		}
 
