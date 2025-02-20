@@ -498,6 +498,11 @@ iframe {
 	height: 10em;
 	font-size: 12px;
 	position: relative;
+
+	ul,
+	ol {
+		padding-left: rem(20);
+	}
 	h2 {
 		font-size: 2.4em;
 	}

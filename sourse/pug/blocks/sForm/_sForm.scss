@@ -55,7 +55,8 @@
 			// @include mt;
 		}
 
-		&:focus-visible ~ .text-label {
+		&:focus-visible ~ .text-label,
+		&:not(:placeholder-shown) ~ .text-label {
 			opacity: 0;
 		}
 	}
