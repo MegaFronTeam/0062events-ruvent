@@ -48,11 +48,12 @@
 
 		@for $i from 1 through 46 {
 			path:nth-child(#{$i}) {
-				opacity: 0;
-				$duration: random(20) * 0.2s + 3s;
+				visibility: hidden;
+				// opacity: 0;
+				$duration: random(20) * 0.2s + 4s;
 				$delay: random(20) * 0.5s;
 
-				animation: blink $duration infinite alternate $delay;
+				animation: blink $duration infinite steps(2, end) $delay;
 			}
 		}
 
@@ -182,9 +183,9 @@
 	40%,
 	60%,
 	100% {
-		opacity: 0;
+		visibility: hidden;
 	}
 	50% {
-		opacity: 1;
+		visibility: visible;
 	}
 }

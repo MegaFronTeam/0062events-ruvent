@@ -8,13 +8,13 @@ mixin sLogos(data)
 					+e.slide.swiper-slide
 						+e.img-wrap
 							+img(`img/logo-${i}`)
-				- for (var x = 1; x < 9; x++)
-					+item(x+'.png') 
-				+item('9.svg')
-				- for (var x = 10; x < 30; x++)
-					+item(x+'.png') 
-				+item('30.jpg')
-				+item('31.svg')
-				- for (var x = 32; x < 37; x++)
-					+item(x+'.png') 
+				- for (var x = 1; x < 37; x++)
+					if x!== 2
+						if x == 9 || x == 31
+							+item(x + '.svg')
+						else if x == 30
+							+item(x+'.jpg')
+						else
+							+item(x+'.png')
+					
 	// end sLogos
