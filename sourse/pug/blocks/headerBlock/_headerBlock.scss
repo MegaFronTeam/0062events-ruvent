@@ -45,6 +45,8 @@
 			@include a-cent1;
 			z-index: 3;
 			pointer-events: none;
+			max-width: 140%;
+			max-height: 140%;
 		}
 
 		@for $i from 1 through 46 {

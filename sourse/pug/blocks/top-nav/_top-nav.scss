@@ -2,6 +2,8 @@
 	--sPT: #{rem(19)};
 	--sPB: #{rem(19)};
 	font-size: 14px;
+	position: relative;
+	z-index: 2;
 	// --sTPB: #{rem()};
 	&__row {
 		--bs-gutter-x: #{rem(24)};
@@ -12,7 +14,9 @@
 	}
 
 	&__logo {
-		margin-right: rem(36);
+		@include media-breakpoint-up(sm) {
+			margin-right: rem(36);
+		}
 	}
 	.section-title {
 	}
