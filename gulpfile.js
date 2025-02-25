@@ -311,7 +311,11 @@ class gs {
 			gs.bootstrapStyles
 		);
 		watch(
-			[source + "/pug/**/*.pug", source + "/pug/content.json"],
+			[
+				source + "/pug/**/*.pug",
+				source + "/pug/**/*.html",
+				source + "/pug/content.json",
+			],
 			{usePolling: true},
 			gs.pugFiles
 		);
