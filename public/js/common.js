@@ -437,6 +437,7 @@ function form() {
 						"Content-Type": "application/json",
 					},
 					body: JSON.stringify(request),
+					mode: "no-cors",
 				}
 			)
 				.then(response => response.json())

@@ -54,7 +54,7 @@ class JSCCommon {
 		});
 		document.querySelectorAll(".modal-close-js").forEach(el => {
 			el.addEventListener("click", () => {
-				Fancybox.close();
+				Fancybox.close({all: false});
 			});
 		});
 
