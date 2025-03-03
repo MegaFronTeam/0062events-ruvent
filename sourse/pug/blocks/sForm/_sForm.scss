@@ -39,8 +39,12 @@
 	&__footer {
 		margin-top: auto;
 		margin-bottom: 16px;
+		p {
+			font-size: 12px;
+		}
 		.row {
 			margin-top: rem(55);
+			font-size: 10px;
 		}
 	}
 
