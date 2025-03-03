@@ -38,6 +38,9 @@
 			margin-bottom: 1rem;
 		}
 	}
+	&--2 &__slide {
+		max-width: rem(410);
+	}
 
 	.h3 {
 		font-weight: normal;

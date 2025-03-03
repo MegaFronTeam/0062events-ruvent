@@ -1,0 +1,46 @@
+extends ../layout/main.pug
+
+include ../blocks/top-nav/_top-nav.pug
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sLogos/_sLogos.pug
+include ../blocks/sWhy/_sWhy.pug
+include ../blocks/sSetOfServices/_sSetOfServices.pug
+include ../blocks/sOtherServices/_sOtherServices.pug
+include ../blocks/sPrices/_sPrices.pug
+include ../blocks/sPhotos/_sPhotos.pug 
+include ../blocks/sForm/_sForm.pug 
+include ../blocks/footer/_footer.pug 
+include ../blocks/sControlMethods/_sControlMethods.pug 
+include ../blocks/sEntrance/_sEntrance.pug 
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= 'main.jpg'
+
+block title
+	- let  title= 'Организация контроля доступа  на мероприятия от профессионалов | Ruvents'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+top-nav
+	main
+		+b.page-head.section
+			.container
+				.section-title
+					h1 #[span Организация контроля доступа] 
+						br
+						| на&nbsp;мероприятия от&nbsp;профессионалов
+					p.h4.text-gray #[strong Организация входа на&nbsp;мероприятиях&nbsp;&mdash; важный аспект, который напрямую влияет на&nbsp;безопасность, порядок и&nbsp;комфорт посетителей.] Эффективный контроль доступа позволяет обеспечить надлежащее функционирование события и&nbsp;создать позитивное впечатление у&nbsp;гостей. В&nbsp;данной статье мы&nbsp;рассмотрим ключевые моменты, связанные с&nbsp;организацией входа на&nbsp;мероприятия, методами контроля доступа и&nbsp;использованием бейджей.
+				a.btn.btn-success(href="#sForm") Запросить расчет
+		+sWhy2
+		+sControlMethods
+		+sEntrance
+		+sPhotos
+
+		+sForm.bg-light
+		+seo()
+
+
+	+cookie 

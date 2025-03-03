@@ -1,0 +1,65 @@
+// start .sEntrance
+.sEntrance {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+
+	&__row {
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+		display: grid;
+		gap: 24px;
+		margin-bottom: rem(60);
+		@include media-breakpoint-up(lg) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		border-bottom: 1px solid #f0f2f4;
+		padding-block: rem(40);
+		align-items: self-start;
+	}
+	&__head {
+		display: flex;
+		align-items: center;
+		gap: rem(24);
+	}
+
+	&__icon-wrap {
+		width: rem(40);
+		height: rem(40);
+		border-radius: rem(50);
+		background: #3d58b00d;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+	}
+
+	ul {
+		padding-left: rem(20);
+		font-size: rem(20);
+		li {
+			margin-bottom: 0.5em;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sEntrance

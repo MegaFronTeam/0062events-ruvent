@@ -1,0 +1,68 @@
+// start .sControlMethods
+.sControlMethods {
+	// --sPT: #{rem()};
+	// --sPB: #{rem()};
+	// --sTPB: #{rem()};
+	background: #f6f7f8;
+
+	&__row {
+		--bs-gutter-x: #{rem(20)};
+		--bs-gutter-y: #{rem(20)};
+	}
+	.section-title {
+	}
+	&__col {
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		background-color: #fff;
+		border-radius: 24px;
+		img {
+			border-radius: inherit;
+			mask-image: linear-gradient(
+				to bottom,
+				rgba(0, 0, 0, 0) 0%,
+				rgba(0, 0, 0, 1) 40%,
+				rgba(0, 0, 0, 1) 100%
+			);
+			margin-top: auto;
+			width: 100%;
+			object-fit: cover;
+			aspect-ratio: 630/322;
+		}
+	}
+
+	&__head {
+		padding: rem(40px);
+		padding-bottom: 0;
+	}
+	&__title {
+		@include rfs(24px);
+		font-weight: 600;
+		margin-bottom: rem(20);
+	}
+	ul {
+		padding-left: rem(20);
+		font-size: rem(20);
+		li {
+			margin-bottom: 0.5em;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+	}
+	@include media-breakpoint-up(lg) {
+	}
+	@include media-breakpoint-up(md) {
+	}
+	@include media-breakpoint-up(sm) {
+	}
+	@include media-breakpoint-between(md, xl) {
+	}
+	@include media-breakpoint-only(xl) {
+	}
+	@include media-breakpoint-down(xl) {
+	}
+} // end.sControlMethods

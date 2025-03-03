@@ -122,7 +122,8 @@ main {
 	margin-bottom: var(--sTPB);
 	.h1,
 	h1,
-	h2 {
+	h2,
+	h3 {
 		display: inline-block;
 		span {
 			display: inline-block;
@@ -559,5 +560,14 @@ iframe {
 	@include mt;
 	&:hover {
 		opacity: 1;
+	}
+}
+
+p.h4.text-gray {
+	font-weight: 600;
+	line-height: calc(28 / 24);
+	color: #666d80;
+	strong {
+		color: $body-color;
 	}
 }

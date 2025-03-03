@@ -1,8 +1,8 @@
 {
 	"nav": [
-		{"name": "О нас", "url": "#sWhy"},
-		{"name": "Услуги", "url": "#sSetOfServices"},
-		{"name": "Стоимость", "url": "#sPrices"},
+		{"name": "О нас", "url": "/#sWhy"},
+		{"name": "Услуги", "url": "/#sSetOfServices"},
+		{"name": "Стоимость", "url": "/#sPrices"},
 		{"name": "Медиа", "url": "#sPhotos"},
 		{
 			"name": "Контакты",
