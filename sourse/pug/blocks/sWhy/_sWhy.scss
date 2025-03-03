@@ -9,6 +9,9 @@
 		// --bs-gutter-y: #{rem()};
 	}
 	.section-title {
+		h2 {
+			--deg: 110deg;
+		}
 	}
 	&__col {
 	}
@@ -40,6 +43,13 @@
 	}
 	&--2 &__slide {
 		max-width: rem(410);
+	}
+
+	&--2 {
+		font-size: rem(20);
+		span {
+			color: #666d80;
+		}
 	}
 
 	.h3 {

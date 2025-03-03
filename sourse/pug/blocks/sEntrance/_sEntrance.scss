@@ -9,13 +9,44 @@
 		// --bs-gutter-y: #{rem()};
 	}
 	.section-title {
+		p {
+			font-size: rem(20);
+			max-width: 1000px;
+		}
 	}
 	&__col {
+	}
+	&__items {
+		margin-bottom: rem(60);
 	}
 	&__item {
 		display: grid;
 		gap: 24px;
-		margin-bottom: rem(60);
+		position: relative;
+		overflow: hidden;
+		z-index: 2;
+		&::before {
+			content: "";
+			/* Ellipse 11 */
+
+			position: absolute;
+			width: 130.78px;
+			height: 130.78px;
+			right: 287.61px;
+			top: 294.56px;
+
+			top: 180%;
+			left: 3%;
+			background: #3d58b0;
+			filter: blur(150px);
+		}
+		&:nth-child(3) {
+			&::before {
+				left: auto;
+				right: 10%;
+			}
+		}
+
 		@include media-breakpoint-up(lg) {
 			grid-template-columns: repeat(2, 1fr);
 		}

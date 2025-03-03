@@ -10,6 +10,10 @@
 		--bs-gutter-y: #{rem(20)};
 	}
 	.section-title {
+		p {
+			font-size: rem(20);
+			max-width: 1000px;
+		}
 	}
 	&__col {
 	}

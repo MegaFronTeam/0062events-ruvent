@@ -103,6 +103,36 @@
 }
 
 .page-head {
+	position: relative;
+	z-index: 2;
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		pointer-events: none;
+		// aspect-ratio: 1;
+	}
+	&::before {
+		width: 652.15px;
+		height: 652.15px;
+		right: 1281.92px;
+		top: -376.15px;
+
+		background: #2dcb70;
+		opacity: 0.2;
+		filter: blur(154.35px);
+	}
+	&::after {
+		width: 615.96px;
+		height: 615.96px;
+		right: -535.06px;
+		top: 152.03px;
+
+		background: #3d58b0;
+		opacity: 0.2;
+		filter: blur(150px);
+	}
 	p {
 	}
 }

@@ -127,7 +127,11 @@ main {
 		display: inline-block;
 		span {
 			display: inline-block;
-			background: linear-gradient(110.29deg, #3d58b0 16.87%, #2dcb70 91.34%);
+			background: linear-gradient(
+				var(--deg, 270.29deg),
+				#3d58b0 16.87%,
+				#2dcb70 91.34%
+			);
 
 			leading-trim: both;
 			text-edge: cap;

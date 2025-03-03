@@ -5,6 +5,11 @@
 	--sTPB: #{rem(35)};
 
 	text-align: left;
+	h1 {
+		span {
+			max-width: em(120);
+		}
+	}
 	&__row {
 		// --bs-gutter-x: #{rem()};
 		--bs-gutter-y: var(--bs-gutter-x);

@@ -20,7 +20,10 @@
 
 	&__link {
 		font-weight: 600;
-		@include rfs(56px);
+		@include media-breakpoint-up(xxl) {
+			font-size: 56px;
+		}
+		@include rfs(40px);
 		border-bottom: 1px solid transparent;
 		&:hover {
 			border-color: $primary;
