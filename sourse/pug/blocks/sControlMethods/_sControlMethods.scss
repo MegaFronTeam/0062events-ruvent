@@ -35,7 +35,11 @@
 	}
 
 	&__head {
-		padding: rem(40px);
+		@include media-breakpoint-up(sm) {
+			padding: rem(40px);
+			padding-bottom: 0;
+		}
+		padding: rem(20px);
 		padding-bottom: 0;
 	}
 	&__title {
