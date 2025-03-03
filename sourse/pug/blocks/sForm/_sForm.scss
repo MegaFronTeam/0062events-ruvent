@@ -39,6 +39,9 @@
 	&__footer {
 		margin-top: auto;
 		margin-bottom: 16px;
+		.row {
+			margin-top: rem(55);
+		}
 	}
 
 	.item__description {
