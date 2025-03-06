@@ -31,6 +31,29 @@
 
 	&__slide {
 		max-width: rem(265);
+		z-index: 2;
+		overflow: hidden;
+		position: relative;
+		&::before {
+			content: "";
+			/* Ellipse 11 */
+
+			position: absolute;
+			width: 130.78px;
+			height: 130.78px;
+			left: 40px;
+			top: 397px;
+			z-index: -1;
+
+			background: #3d58b0;
+			filter: blur(150px);
+
+			/* Inside auto layout */
+			flex: none;
+			order: 3;
+			flex-grow: 0;
+			z-index: 3;
+		}
 		p {
 			margin-bottom: 0;
 		}
@@ -83,6 +106,24 @@
 			order: 3;
 			flex-grow: 0;
 			z-index: 3;
+		}
+
+		.btn {
+			margin-inline: auto;
+			width: 100%;
+			max-width: rem(225);
+			font-size: 14px;
+
+			--bs-btn-color: #3d58b0;
+			--bs-btn-border-color: #dadee7;
+			--bs-btn-hover-color: #fff;
+			--bs-btn-hover-bg: #{$primary};
+			--bs-btn-hover-border-color: #{$primary};
+			--bs-btn-active-color: #fff;
+			--bs-btn-active-bg: #{$primary};
+			--bs-btn-active-border-color: #{$primary};
+			--bs-btn-disabled-color: #dadee7;
+			--bs-btn-disabled-border-color: #dadee7;
 		}
 	}
 
